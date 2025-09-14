@@ -1,0 +1,245 @@
+/* Reset basique */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f9f9f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: url("landivisiau.webp") center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    position: relative;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Style de l'article de présentation */
+.presentation {
+    max-width: 800px;       /* Limite la largeur pour une lecture confortable */
+    margin: 40px auto;      /* Centre l'article et ajoute de l'espace au-dessus et en dessous */
+    padding: 20px;          /* Espace à l'intérieur */
+    background-color: #ffffff;  /* Fond blanc pour contraster avec le reste du site */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Ombre douce pour effet de profondeur */
+    border-radius: 10px;    /* Bords arrondis */
+    line-height: 1.6;       /* Meilleure lisibilité du texte */
+}
+
+/* Titres dans l'article */
+.presentation h2 {
+    font-size: 2rem;
+    color: #2c3e50;         /* Couleur sombre et élégante */
+    margin-bottom: 15px;
+}
+
+/* Texte du paragraphe */
+.presentation p {
+    font-size: 1.1rem;
+    color: #444444;
+}
+
+/* Emphase dans le texte */
+.presentation strong {
+    color: #e67e22;         /* Couleur accentuée pour mots clés */
+}
+#resto {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+#resto h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Article restaurant */
+.landiResto {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.landiResto img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.landiResto h3 {
+    margin-top: 0;
+    color: #e67e22;
+}
+
+.landiResto p {
+    margin: 5px 0;
+}
+
+.restoAdresse {
+    font-style: italic;
+    color: #555;
+}
+
+#sports {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+#sports h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Article club de sport */
+.clubDeSport {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.clubDeSport img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.clubDeSport h3 {
+    margin-top: 0;
+    color: #27ae60; /* couleur différente pour la section sports */
+}
+
+.clubDeSport p {
+    margin: 5px 0;
+}
+
+.sportNum {
+    font-style: italic;
+    color: #555;
+}
+
+form {
+    max-width: 600px;       /* Limite la largeur du formulaire */
+    margin: 40px auto;      /* Centre le formulaire */
+    padding: 30px;
+    background-color: #ffffff; /* Fond blanc */
+    border-radius: 10px;       /* Bords arrondis */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Ombre légère */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;              /* Espacement entre les champs */
+    font-family: Arial, sans-serif;
+}
+
+/* Style des labels */
+form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Style des inputs et textarea */
+form input[type="email"],
+form textarea {
+    margin-top: 8px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: 0.3s;
+    font-family: inherit;
+}
+
+/* Effet focus */
+form input[type="email"]:focus,
+form textarea:focus {
+    border-color: #e67e22;
+    outline: none;
+    box-shadow: 0 0 5px rgba(230,126,34,0.5);
+}
+
+/* Style du bouton */
+form button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Effet hover sur le bouton */
+form button:hover {
+    background-color: #d35400;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        padding: 50px 20px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
